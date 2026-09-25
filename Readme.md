@@ -37,3 +37,18 @@
     prod -->> develop : merge
     develop -->> Developer : pull
 ```
+
+#### 02.02. Project Folder LLD
+```mermaid
+  flowchart LR
+    User(("User"))
+    subgraph Testing
+      subgraph Frontend["Frontend"]
+      end
+      subgraph Backend["Backend"]
+      end
+    end
+
+    User --> Frontend
+    Frontend --> Backend
+```
