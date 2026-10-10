@@ -51,9 +51,11 @@ Visit Agile Management Baord
     User(("User"))
     subgraph Testing["Testing"]
       subgraph Frontend["Frontend"]
+        React["React"]
       end
 
       subgraph Backend["Backend"]
+        Node["Node"]
       end
     end
 
@@ -62,6 +64,30 @@ Visit Agile Management Baord
 ```
 
 #### 02.03. Environment Setup LLD
+```mermaid
+  flowchart
+    User(("User"))
+    subgraph Environment["Environment"]
+      develop["develop"]
+      test["test"]
+      stage["stage"]
+      prod["prod"]
+    end
+    subgraph Project["Project"]
+      direction TB
+      Backend["Backend"]
+      Frontend["Frontend"]
+    end
+
+    User --> develop
+      develop --> Project
+    User --> test
+      test --> Project
+    User --> stage
+      stage --> Project
+    User --> prod
+      prod --> Project
+```
 
 #### 02.04. Playwright Setup LLD
 
@@ -70,3 +96,37 @@ Visit Agile Management Baord
 #### 02.06. CI/CD Deployment Setup LLD
 
 ## Servers & DNS
+
+### Backend
+- Development
+  - Local: [http://localhost:8001](http://localhost:8001)
+  - Live: []()
+
+- Testing
+  - Local: [http://localhost:8002](http://localhost:8002)
+  - Live: []()
+
+- Staging
+  - Local: [http://localhost:8003](http://localhost:8003)
+  - Live: []()
+
+- Production
+  - Local: [http://localhost:8004](http://localhost:8004)
+  - Live: []()
+
+### Frontend
+- Development
+  - Local: [http://localhost:3001](http://localhost:3001)
+  - Live: []()
+
+- Testing
+  - Local: [http://localhost:3002](http://localhost:3002)
+  - Live: []()
+
+- Staging
+  - Local: [http://localhost:3003](http://localhost:3003)
+  - Live: []()
+
+- Production
+  - Local: [http://localhost:3004](http://localhost:3004)
+  - Live: []()
