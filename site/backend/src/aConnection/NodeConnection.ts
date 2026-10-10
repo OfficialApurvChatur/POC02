@@ -25,6 +25,7 @@ class NodeConnection {
     this.connection.listen(PORT, () => {
       console.log(`Node connection listening on http://localhost:${PORT}`);
       console.log(`
+        URL: http://localhost:${PORT}
         Environment: ${ENV}
         Machine: ${MACHINE}
         Port: ${PORT}

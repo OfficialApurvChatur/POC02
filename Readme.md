@@ -63,6 +63,28 @@ Visit Agile Management Baord
 ```
 
 #### 02.03. Environment Setup LLD
+```mermaid
+  flowchart
+    User(("User"))
+    subgraph Environment["Environment"]
+      develop["develop"]
+      test["test"]
+      stage["stage"]
+      prod["prod"]
+    end
+    subgraph Project["Project"]
+      Backend["Backend"]
+    end
+
+    User --> develop
+      develop --> Project
+    User --> test
+      test --> Project
+    User --> stage
+      stage --> Project
+    User --> prod
+      prod --> Project
+```
 
 #### 02.04. Playwright Setup LLD
 
@@ -74,17 +96,17 @@ Visit Agile Management Baord
 
 ### Backend
 - Development
-  - Local: [http://localhost:8000](http://localhost:8000)
+  - Local: [http://localhost:8001](http://localhost:8001)
   - Live: []()
 
 - Testing
-  - Local: []()
+  - Local: [http://localhost:8002](http://localhost:8002)
   - Live: []()
 
 - Staging
-  - Local: []()
+  - Local: [http://localhost:8003](http://localhost:8003)
   - Live: []()
 
 - Production
-  - Local: []()
+  - Local: [http://localhost:8004](http://localhost:8004)
   - Live: []()
