@@ -1,12 +1,13 @@
 import http from "http";
 import fs from "fs/promises";
 import path from "path";
+import { getEnv } from "./EnvironmentConnection.js";
 
 
-const ENV = process.env.NODE_ENV || "default";
-const MACHINE = process.env.NODE_MACHINE || "default";
-const PORT = process.env.NODE_PORT || 8000;
-const APP_NAME = process.env.NODE_APP_NAME || "POC02-ExpressShadcnSetup";
+const ENV = getEnv.ENV;
+const MACHINE = getEnv.MACHINE;
+const PORT = getEnv.PORT;
+const APP_NAME = getEnv.APP_NAME;
 
 class NodeConnection {
   private connection!: http.Server;

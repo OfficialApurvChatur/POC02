@@ -65,3 +65,4 @@ class EnvironmentConnection {
 
 const environmentConnection = new EnvironmentConnection();
 export default environmentConnection;
+export const getEnv = environmentConnection.getEnvironment();

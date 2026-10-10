@@ -1,10 +1,11 @@
 import React from "react";
+import { getEnv } from "./EnvironmentConnection";
 
 
-const ENV = import.meta.env.VITE_ENV || "default";
-const MACHINE = import.meta.env.VITE_MACHINE || "default";
-const PORT = import.meta.env.VITE_PORT || 3000;
-const APP_NAME = import.meta.env.VITE_APP_NAME || "POC02-ExpressShadcnSetup";
+const ENV = getEnv.ENV;
+const MACHINE = getEnv.MACHINE;
+const PORT = getEnv.PORT;
+const APP_NAME = getEnv.APP_NAME;
 
 const ReactConnection = () => {
   // render checl
