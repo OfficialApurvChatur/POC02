@@ -25,7 +25,7 @@ Visit Agile Management Baord
 ### 02. Low Level Design (LLD)
 
 #### 02.01. Git Branching & PR Strategies Setup LLD
-<!-- ```mermaid
+```mermaid
   sequenceDiagram
     actor Developer
     participant feature/*
@@ -43,7 +43,7 @@ Visit Agile Management Baord
     stage -->> prod : merge
     prod -->> develop : merge
     develop -->> Developer : pull
-``` -->
+```
 
 #### 02.02. Project Folder Setup LLD
 
