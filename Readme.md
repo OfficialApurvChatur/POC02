@@ -77,6 +77,7 @@ Visit Agile Management Baord
       direction TB
       Backend["Backend"]
       Frontend["Frontend"]
+      Testing["Testing"]
     end
 
     User --> develop
@@ -90,6 +91,27 @@ Visit Agile Management Baord
 ```
 
 #### 02.04. Playwright Setup LLD
+```mermaid
+  flowchart
+    Developer["Developer"]
+      CLI["Command Line Interface"]
+    Tester["Tester"]
+      GithubActions["GithubActions"]
+    subgraph Testing["Testing"]
+      Playwright["Playwright"]
+    end
+    subgraph Project["Project"]
+      direction TB
+      Frontend["Frontend"]
+      Backend["Backend"]
+    end
+
+    Developer --> CLI
+      CLI --> Testing
+    Tester --> GithubActions
+      GithubActions --> Testing
+    Testing --> Project
+```
 
 #### 02.05. Servers & DNS Setup LLD
 
@@ -129,4 +151,9 @@ Visit Agile Management Baord
 
 - Production
   - Local: [http://localhost:3004](http://localhost:3004)
+  - Live: []()
+
+### Testing
+- Report
+  - Local: [http://localhost:9323](http://localhost:9323)
   - Live: []()
