@@ -1,3 +1,4 @@
+import "./src/aConnection/EnvironmentConnection";
 import { defineConfig, devices } from '@playwright/test';
 
 /**
