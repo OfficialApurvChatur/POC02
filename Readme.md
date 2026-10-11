@@ -77,6 +77,7 @@ Visit Agile Management Baord
       direction TB
       Backend["Backend"]
       Frontend["Frontend"]
+      Testing["Testing"]
     end
 
     User --> develop
