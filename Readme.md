@@ -114,44 +114,79 @@ Visit Agile Management Baord
 ```
 
 #### 02.05. Servers & DNS Setup LLD
+```mermaid
+  flowchart
+    User["User"]
+    Domain["Domain"]
+    DNS["DNS Resolution"]
+    Server["Server"]
+    subgraph Project["Project"]
+      direction TB
+      Frontend["Frontend"]
+      Backend["Backend"]
+    end
+
+    User --> Domain
+    Domain --> DNS
+    DNS --> Server
+    Server --> Project
+```
 
 #### 02.06. CI/CD Deployment Setup LLD
+```mermaid
+  flowchart
+    Code["Code Commit"]
+    Render["Render"]
+    Netlify["Netlify"]
+      Build["Build"]
+      Deploy["Deploy"]
+    GithubActions["Github Actions"]
+      Test["Test"]
+    
+    Code --> Render
+    Code --> Netlify
+      Render --> Build
+      Netlify --> Build
+        Build --> Deploy
+    Code --> GithubActions
+      GithubActions --> Test
+```
 
 ## Servers & DNS
 
 ### Backend
 - Development
   - Local: [http://localhost:8001](http://localhost:8001)
-  - Live: []()
+  - Live: [https://express-shadcn-v01-backend-develop.onrender.com](https://express-shadcn-v01-backend-develop.onrender.com)
 
 - Testing
   - Local: [http://localhost:8002](http://localhost:8002)
-  - Live: []()
+  - Live: [https://express-shadcn-v01-backend-test.onrender.com](https://express-shadcn-v01-backend-test.onrender.com)
 
 - Staging
   - Local: [http://localhost:8003](http://localhost:8003)
-  - Live: []()
+  - Live: [https://express-shadcn-v01-backend-stage.onrender.com](https://express-shadcn-v01-backend-stage.onrender.com)
 
 - Production
   - Local: [http://localhost:8004](http://localhost:8004)
-  - Live: []()
+  - Live: [https://express-shadcn-v01-backend-prod.onrender.com](https://express-shadcn-v01-backend-prod.onrender.com)
 
 ### Frontend
 - Development
   - Local: [http://localhost:3001](http://localhost:3001)
-  - Live: []()
+  - Live: [https://express-shadcn-v01-frontend-develop.netlify.app](https://express-shadcn-v01-frontend-develop.netlify.app)
 
 - Testing
   - Local: [http://localhost:3002](http://localhost:3002)
-  - Live: []()
+  - Live: [https://express-shadcn-v01-frontend-test.netlify.app](https://express-shadcn-v01-frontend-test.netlify.app)
 
 - Staging
   - Local: [http://localhost:3003](http://localhost:3003)
-  - Live: []()
+  - Live: [https://express-shadcn-v01-frontend-stage.netlify.app](https://express-shadcn-v01-frontend-stage.netlify.app)
 
 - Production
   - Local: [http://localhost:3004](http://localhost:3004)
-  - Live: []()
+  - Live: [https://express-shadcn-v01-frontend-prod.netlify.app](https://express-shadcn-v01-frontend-prod.netlify.app)
 
 ### Testing
 - Report
