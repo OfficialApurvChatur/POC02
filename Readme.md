@@ -132,6 +132,24 @@
 ```
 
 #### 02.06. CI/CD Deployment Setup LLD
+```mermaid
+  flowchart
+    Code["Code Commit"]
+    Render["Render"]
+    Netlify["Netlify"]
+      Build["Build"]
+      Deploy["Deploy"]
+    GithubActions["Github Actions"]
+      Test["Test"]
+    
+    Code --> Render
+    Code --> Netlify
+      Render --> Build
+      Netlify --> Build
+        Build --> Deploy
+    Code --> GithubActions
+      GithubActions --> Test
+```
 
 ## Servers & DNS
 
