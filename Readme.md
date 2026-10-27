@@ -50,6 +50,7 @@
     User(("User"))
     subgraph Testing["Testing"]
       subgraph Frontend["Frontend"]
+        React["React"]
       end
 
       subgraph Backend["Backend"]
@@ -106,4 +107,21 @@
 
 - Production:
   - Local: [http://localhost:8004](http://localhost:8004)
+  - Live: []()
+
+### Frontend
+- Development:
+  - Local: [http://localhost:5173](http://localhost:5173)
+  - Live: []()
+
+- Testing:
+  - Local: []()
+  - Live: []()
+
+- Staging:
+  - Local: []()
+  - Live: []()
+
+- Production:
+  - Local: []()
   - Live: []()
