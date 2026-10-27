@@ -4,7 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node script.js",
+    "dev:test": "node script.js testing local",
+    "dev:stage": "node script.js staging local",
+    "dev:prod": "node script.js production local",
+
+    "dev:develop:live": "node script.js development live",
+    "dev:test:live": "node script.js testing live",
+    "dev:stage:live": "node script.js staging live",
+    "dev:prod:live": "node script.js production live",
+
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
