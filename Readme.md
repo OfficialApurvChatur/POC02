@@ -51,6 +51,7 @@
     subgraph Testing["Testing"]
       subgraph Frontend["Frontend"]
         React["React"]
+        Shadcn["Shadcn"]
       end
 
       subgraph Backend["Backend"]
@@ -60,6 +61,7 @@
     end
 
     User --> Frontend
+      React --> Shadcn
     Frontend --> Backend
       Node --> Express
 ```
@@ -175,19 +177,19 @@
 ### Frontend
 - Development:
   - Local: [http://localhost:3001](http://localhost:3001)
-  - Live: [https://shadcn-v01-frontend-develop.netlify.app](https://shadcn-v01-frontend-develop.netlify.app)
+  - Live: [https://poc-02-frontend-develop.netlify.app](https://poc-02-frontend-develop.netlify.app)
 
 - Testing:
   - Local: [http://localhost:3002](http://localhost:3002)
-  - Live: [https://shadcn-v01-frontend-test.netlify.app](https://shadcn-v01-frontend-test.netlify.app)
+  - Live: [https://poc-02-frontend-test.netlify.app](https://poc-02-frontend-test.netlify.app)
 
 - Staging:
   - Local: [http://localhost:3003](http://localhost:3003)
-  - Live: [https://shadcn-v01-frontend-stage.netlify.app](https://shadcn-v01-frontend-stage.netlify.app)
+  - Live: [https://poc-02-frontend-stage.netlify.app](https://poc-02-frontend-stage.netlify.app)
 
 - Production:
   - Local: [http://localhost:3004](http://localhost:3004)
-  - Live: [https://shadcn-v01-frontend-prod.netlify.app](https://shadcn-v01-frontend-prod.netlify.app)
+  - Live: [https://poc-02-frontend-prod.netlify.app](https://poc-02-frontend-prod.netlify.app)
 
 ### Testing
 - Report
