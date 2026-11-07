@@ -194,4 +194,17 @@
 ### Testing
 - Report
   - Local: [http://localhost:9323](http://localhost:9323)
-  - Live: []()
+  - Live: [GitHub Actions](https://github.com/users/OfficialApurvChatur/projects/17)
+
+## Final Relese Presentation
+
+<p align="center">
+  <img src="./presentation/1.png" alt="Presentation Slide 1" width="300" />
+  <img src="./presentation/2.png" alt="Presentation Slide 2" width="300" />
+  <img src="./presentation/3.png" alt="Presentation Slide 3" width="300" />
+  <img src="./presentation/4.png" alt="Presentation Slide 4" width="300" />
+  <img src="./presentation/5.png" alt="Presentation Slide 5" width="300" />
+  <img src="./presentation/6.png" alt="Presentation Slide 6" width="300" />
+  <img src="./presentation/7.png" alt="Presentation Slide 7" width="300" />
+  <img src="./presentation/8.png" alt="Presentation Slide 8" width="300" />
+</p>
